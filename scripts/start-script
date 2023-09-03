@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "whrite filename"
-read file
+read txt
 
-touch ${file}
-echo "#!/bin/bash"
+touch ${txt}
+echo "#!/bin/bash " > ${txt}
+
+vi ${txt}
 
 
-vi file
+chmod u+x ${txt}

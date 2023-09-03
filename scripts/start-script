@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "whrite filename"
+read file
+
+touch ${file}
+echo "#!/bin/bash"
+
+
+vi file
